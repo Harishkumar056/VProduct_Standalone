@@ -1,0 +1,57 @@
+/* 🔹 Background Image */
+#newUserScreen {
+    -fx-background-image: url("be2.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+/* 🔹 Labels */
+Label {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* 🔹 TextFields & PasswordField */
+TextField, PasswordField {
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 7px;
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    -fx-text-fill: white;
+}
+
+/* 🔹 When user clicks inside the text field */
+TextField:focused, PasswordField:focused {
+    -fx-border-color: #1E90FF;
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Buttons */
+Button {
+    -fx-font-size: 15px;
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 15px;
+    -fx-font-weight: bold;
+}
+
+/* 🔹 Button Hover Effect */
+Button:hover {
+    -fx-background-color: #4682B4;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+/* 🔹 Button Click Effect */
+Button:pressed {
+    -fx-background-color: #0F5C9E;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}

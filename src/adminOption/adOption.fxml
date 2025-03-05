@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="adminOptionScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../garmentCSS/AdminOption.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminOption.AdOptionController">
+<!--       <image>
+            <Image url="@BGImage.png" />
+   </image>-->
+    
+    <children>
+      <ImageView fx:id="adminOptionBG" fitHeight="998.0" fitWidth="1346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bgImage.png" />
+         </image>
+      </ImageView>
+    
+       <Label layoutX="545.0" layoutY="168.0" text="Admin Option">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="530.0" layoutY="255.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="47.0" prefWidth="190.0" text="Add Products">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="535.0" layoutY="352.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove Products">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="535.0" layoutY="453.0" mnemonicParsing="false" onAction="#customerDetails" text="Customer Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#backToAdminLogin" text="Back" />
+      <Button layoutX="535.0" layoutY="553.0" mnemonicParsing="false" onAction="#orderDetails" prefHeight="32.0" prefWidth="175.0" text="Order Details" />
+      <Button layoutX="538.0" layoutY="651.0" mnemonicParsing="false" onAction="#viewProducts" prefHeight="32.0" prefWidth="175.0" text="View Products" />
+   </children>
+   
+</AnchorPane>

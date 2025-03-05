@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="addProductPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../garmentCSS/AddProduct.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addProduct.AddProductController">
+   <children>
+      <ImageView fx:id="bgimage" fitHeight="884.0" fitWidth="1334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BG.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="432.0" layoutY="155.0" text="Add Products">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="239.0" text="Product Name :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="388.0" prefHeight="30.0" prefWidth="147.0" text="Product Size  :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="441.0" text="Product Price :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="500.0" prefHeight="30.0" prefWidth="210.0" text="Product Image Path :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productName" layoutX="500.0" layoutY="241.0" onAction="#searchProduct" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="productPrice" layoutX="500.0" layoutY="441.0" prefHeight="25.0" prefWidth="162.0" />
+      <Button layoutX="879.0" layoutY="500.0" mnemonicParsing="false" onAction="#uploadImage" text="Upload" />
+      <Button layoutX="-1.0" layoutY="-3.0" mnemonicParsing="false" onAction="#BackToAdminLogin" prefHeight="47.0" prefWidth="95.0" text="Back" />
+      <Button layoutX="560.0" layoutY="507.0" mnemonicParsing="false" onAction="#browseImage" text="Browse Image" />
+      <TextField fx:id="productSIze" layoutX="500.0" layoutY="388.0" prefHeight="25.0" prefWidth="162.0" />
+      <ImageView fx:id="uploadImg" fitHeight="300.0" fitWidth="300.0" layoutX="757.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="360.0" layoutY="283.0" prefHeight="30.0" prefWidth="120.0" text="Product Id :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productId" layoutX="500.0" layoutY="288.0" prefHeight="25.0" prefWidth="162.0" />
+      <Label layoutX="313.0" layoutY="334.0" prefHeight="30.0" prefWidth="162.0" text="Product Brand  :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productBrand" layoutX="500.0" layoutY="334.0" prefHeight="25.0" prefWidth="162.0" />
+   </children>
+</AnchorPane>

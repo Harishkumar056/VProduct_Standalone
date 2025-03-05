@@ -1,0 +1,63 @@
+/* 🌟 Background Image (Transparency for a Sleek Look) */
+#bgimage {
+    -fx-opacity: 0.9;
+}
+
+/* 🌟 Glowing Labels */
+Label {
+    -fx-text-fill: #ffcc00; /* Golden Glow */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 204, 0, 0.8), 10, 0.5, 0, 0);
+}
+
+/* 🌟 Input Fields Styling */
+TextField {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #ffcc00;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 18px;
+    -fx-padding: 5px;
+}
+
+/* 🌟 Input Field Focus Effect */
+TextField:focused {
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.8), 10, 0.5, 0, 0);
+}
+
+/* 🌟 Glowing Buttons */
+Button {
+    -fx-background-color: linear-gradient(to bottom, #ffcc00, #ff8800);
+    -fx-text-fill: black;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 136, 0, 0.8), 10, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* 🌟 Hover Effect */
+Button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffdd55, #ff9900);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 204, 0, 1), 15, 0.8, 0, 0);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* 🌟 Button Pressed Effect */
+Button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #ff7700, #ff4400);
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+
+/* 🌟 Button Focus Glow */
+Button:focused {
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.8), 10, 0.5, 0, 0);
+}

@@ -1,0 +1,83 @@
+/* 🌟 Background Image Styling */
+#bgimage {
+    -fx-opacity: 0.9;
+}
+
+/* 🌟 Glowing Labels (Red Theme) */
+Label {
+    -fx-text-fill: #ff4444; /* Red Glow */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 68, 68, 0.8), 10, 0.5, 0, 0);
+}
+
+/* 🌟 GridPane Styling */
+GridPane {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #ff4444;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+/* 🌟 Labels Inside Grid */
+#gridRemoveProduct Label {
+    -fx-text-fill: black;
+    -fx-font-weight: normal;
+    -fx-font-size: 18px;
+}
+
+/* 🌟 Input Fields (for future use) */
+TextField {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #ff4444;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 18px;
+    -fx-padding: 5px;
+}
+
+/* 🌟 Focus Effect for Text Fields */
+TextField:focused {
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.8), 10, 0.5, 0, 0);
+}
+
+/* 🌟 Delete Button - Glowing Red */
+Button {
+    -fx-background-color: linear-gradient(to bottom, #ff4444, #cc0000);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 0.8), 10, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* 🌟 Hover Effect for Delete Button */
+Button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff6666, #ff0000);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 0, 1), 15, 0.8, 0, 0);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* 🌟 Button Pressed Effect */
+Button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #cc0000, #990000);
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+
+/* 🌟 Back Button Styling */
+Button[text="Back"] {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+Button[text="Back"]:hover {
+    -fx-background-color: #333;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.8), 10, 0.5, 0, 0);
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="newUserScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../garmentCSS/newCustomerCSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newCustomer.NewCustomerFXMLController">
+   <children>
+      <ImageView fitHeight="927.0" fitWidth="1376.0" layoutX="-30.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@be2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1058.0" layoutY="181.0" prefHeight="30.0" prefWidth="151.0" text="New User Login" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserName" alignment="CENTER" layoutX="1041.0" layoutY="247.0" promptText="user name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="newUserPhno" alignment="CENTER" layoutX="1040.0" layoutY="385.0" promptText="User Phone number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="newUserPass" alignment="CENTER" layoutX="1040.0" layoutY="321.0" promptText="user password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="createAccount" layoutX="1121.0" layoutY="459.0" mnemonicParsing="false" onAction="#createAccountButton" prefHeight="41.0" prefWidth="145.0" text="Create Account">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backToLogin" layoutY="-1.0" mnemonicParsing="false" onAction="#backLoginButtton" stylesheets="@../garmentCSS/newCustomerCSS.css" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

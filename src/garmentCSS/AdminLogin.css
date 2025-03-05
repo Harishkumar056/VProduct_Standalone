@@ -1,0 +1,47 @@
+/* Set Background for Entire Page */
+#adminPage {
+    -fx-background-color: black; /* Dark background for glowing effect */
+}
+
+/* Glowing Label Effect */
+Label {
+    -fx-text-fill: #ffcc00; /* Golden text */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 204, 0, 0.8), 10, 0.5, 0, 0);
+}
+
+/* Glowing Input Fields */
+TextField, PasswordField {
+    -fx-background-color: #222;
+    -fx-text-fill: white;
+    -fx-border-color: #ffcc00; /* Golden border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 16px;
+}
+
+/* Input Field Glow on Focus */
+TextField:focused, PasswordField:focused {
+    -fx-border-color: #ffdd55;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 221, 85, 0.8), 10, 0.5, 0, 0);
+}
+
+/* Buttons with Glowing Effect */
+Button {
+    -fx-background-color: linear-gradient(to bottom, #ffcc00, #ff8800);
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 7px 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 136, 0, 0.8), 10, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* Button Hover Glow */
+Button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffdd55, #ff9900);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 204, 0, 1), 15, 0.8, 0, 0);
+}

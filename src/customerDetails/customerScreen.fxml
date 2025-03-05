@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="customerPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerDetails.CustomerScreenController">
+   <children>
+      <Label layoutX="565.0" layoutY="181.0" text="Customer Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutY="-3.0" mnemonicParsing="false" onAction="#backToAdminOption" prefHeight="30.0" prefWidth="52.0" text="Back" />
+      <TableView fx:id="customerDetailsTab" layoutX="365.0" layoutY="300.0" prefHeight="200.0" prefWidth="642.0">
+                <columns>
+            
+          <TableColumn fx:id="serialNum" prefWidth="84.0" text="S.No">
+              <cellValueFactory>
+                        <PropertyValueFactory property="serialNumber" />
+                    </cellValueFactory>
+          </TableColumn>
+        
+          <TableColumn fx:id="customerName" prefWidth="185.0" text="Customer Name">
+              <cellValueFactory>
+                        <PropertyValueFactory property="customerName" />
+                    </cellValueFactory>
+          </TableColumn>
+        
+            <TableColumn fx:id="customerPassword" prefWidth="185.0" text="Customer Password">
+                <cellValueFactory>
+                        <PropertyValueFactory property="customerPassword" />
+                    </cellValueFactory>
+          </TableColumn>
+          
+            <TableColumn fx:id="customerPhone" prefWidth="185.0" text="Customer Phone Number">
+                <cellValueFactory>
+                        <PropertyValueFactory property="customerPhoneNumber" />
+                    </cellValueFactory>
+          </TableColumn>
+          
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

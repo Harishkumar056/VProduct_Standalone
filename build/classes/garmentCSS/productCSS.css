@@ -1,0 +1,37 @@
+/* Set Background Color for Full Screen */
+#productPage {
+    -fx-background-color: white;
+}
+
+/* GridPane Background (Product List Section) */
+#grid {
+   -fx-background-color: transparent; /* Remove the dark background */
+}
+
+/* Labels: Style Text */
+Label {
+    -fx-text-fill: gray; /* White Text */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons: Styling */
+Button {
+    -fx-background-color: #7289DA; /* Discord Blue */
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-font-size: 15px;
+}
+
+Button:hover {
+    -fx-background-color: #5A72C0; /* Slightly Darker on Hover */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Image View: Add Border */
+#ShowImage {
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
